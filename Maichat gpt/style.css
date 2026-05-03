@@ -26,43 +26,30 @@ body{
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
-/* HAMBURGER BUTTON */
 .hamburger{
   width:42px;
   height:42px;
   border:none;
   border-radius:12px;
   background:#1e293b;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:5px;
+  color:white;
+  font-size:22px;
   cursor:pointer;
-  transition:0.3s ease;
+  transition:0.25s;
 }
 
-/* LINES */
-.hamburger span{
-  width:20px;
-  height:2px;
-  background:white;
-  border-radius:2px;
-  transition:0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+.hamburger:hover{
+  background:#334155;
 }
 
-/* ACTIVE → TURN INTO X */
-.hamburger.active span:nth-child(1){
-  transform:rotate(45deg) translate(4px, 4px);
+.brand h1{
+  font-size:28px;
+  font-weight:800;
 }
 
-.hamburger.active span:nth-child(2){
-  opacity:0;
-  transform:scale(0);
-}
-
-.hamburger.active span:nth-child(3){
-  transform:rotate(-45deg) translate(5px, -5px);
+.brand p{
+  opacity:0.6;
+  font-size:14px;
 }
 
 /* APP */
@@ -114,9 +101,7 @@ body{
 .sidebar.active{
   transform:translateX(0);
 }
-.sidebar {
-  touch-action: manipulation;
-}
+
 .logo{
   font-size:24px;
   font-weight:800;
@@ -232,4 +217,4 @@ video{
     opacity:1;
     transform:translateY(0);
   }
-}
+  }
