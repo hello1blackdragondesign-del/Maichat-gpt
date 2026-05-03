@@ -1,23 +1,8 @@
 const chatWindow = document.getElementById("chatWindow");
+
 function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("active");
   document.getElementById("backdrop").classList.toggle("active");
-
-  document.getElementById("hamburger").classList.toggle("active");
-}
-document.getElementById("sidebar").addEventListener("click", function (e) {
-  e.stopPropagation();
-});
-function closeSidebarOnChatTap() {
-  const sidebar = document.getElementById("sidebar");
-  const backdrop = document.getElementById("backdrop");
-  const hamburger = document.getElementById("hamburger");
-
-  if (sidebar.classList.contains("active")) {
-    sidebar.classList.remove("active");
-    backdrop.classList.remove("active");
-    hamburger.classList.remove("active");
-  }
 }
 
 function addMessage(text, sender) {
@@ -135,4 +120,4 @@ async function generateVideo() {
 
   chatWindow.appendChild(msg);
   chatWindow.scrollTop = chatWindow.scrollHeight;
-      }
+}
